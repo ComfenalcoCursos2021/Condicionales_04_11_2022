@@ -1,10 +1,18 @@
 <?php
-    $edad = 50;
-    $res = match(true){
-        ($edad >= 22 && $edad<50) => "Puede entrar al casino",
-        ($edad >= 50 && $edad<=60) => "Puede entrar al casino y tiene descuesto",
-        $edad >= 18 => "Usted es mayor de edad",
-        default => "Usuario no valido"
-    };
+    if(false){
+        echo "Correcto if";
+    }else{
+        if(false){
+            echo "Correcto 2 if";
+        }else{
+            echo "Incorrecto if";
+        }
+    }
+    echo "<br>";
+    $res = (false) ? "Correcto linea"
+        : ((false) ? "Correcto 2 linea"
+        : "Incorrecto linea");
+
     echo $res;
+
 ?>
